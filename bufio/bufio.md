@@ -90,7 +90,7 @@ func NewReader(rd io.Reader) *Reader {
 func (b *Reader) Size() int { return len(b.buf) }
 ```
 
-`Reset` 方法丢弃任何缓冲数据, 重置所有状态, 并将缓冲读取器切换为从 `r` 读取.
+`Reset` 方法丢弃所有缓冲数据, 重置所有状态, 并将缓冲读取器切换为从 `r` 读取.
 
 ```go
 // Reset discards any buffered data, resets all state, and switches
